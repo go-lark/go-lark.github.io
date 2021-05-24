@@ -1,0 +1,59 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial,
+    "source-han-sans-simplified-c", "Hiragino Sans GB", "Microsoft Yahei",
+    sans-serif;
+  font-size: 15px;
+  margin: 4px;
+}
+
+a {
+  color: navy;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 620px;
+  margin: 16px auto;
+  padding: 0 16px;
+  text-align: left;
+}
+
+h1 {
+  padding-top: 8px;
+  font-weight: normal;
+}
+
+h3 {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  font-weight: normal;
+}
+
+pre,
+code {
+  border-radius: 6px;
+  font-family: "Fira Mono", Menlo, Monaco, Consolas, Courier, monospace;
+  font-size: 14px;
+  hyphens: none;
+}
+
+pre.highlight {
+  border: 1px solid #485d6f;
+}
+
+code.hljs {
+  padding: 12px 16px;
+}
+
+code.highlighter-rouge {
+  background-color: #aaa;
+  padding: 2px 6px;
+}
+
+footer {
+  border-top: 1px solid #aaa;
+}

@@ -5,7 +5,7 @@ layout: default
 [![codecov](https://codecov.io/gh/go-lark/lark/branch/main/graph/badge.svg)](https://codecov.io/gh/go-lark/lark)
 [![Go Reference](https://pkg.go.dev/badge/github.com/go-lark/lark.svg)](https://pkg.go.dev/github.com/go-lark/lark)
 
-An easy-to-use unofficial SDK for Feishu and Lark Open Platform
+An easy-to-use unofficial SDK for Feishu and Lark Open Platform.
 
 go-lark implements messaging APIs, with full-fledged supports on building Chat Bot and Notification Bot.
 

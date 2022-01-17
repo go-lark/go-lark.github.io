@@ -3,7 +3,9 @@ layout: default
 ---
 [![build](https://github.com/go-lark/lark/actions/workflows/ci.yml/badge.svg)](https://github.com/go-lark/lark/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/go-lark/lark/branch/main/graph/badge.svg)](https://codecov.io/gh/go-lark/lark)
+[![Go Report Card](https://goreportcard.com/badge/github.com/go-lark/lark)](https://goreportcard.com/report/github.com/go-lark/lark)
 [![Go Reference](https://pkg.go.dev/badge/github.com/go-lark/lark.svg)](https://pkg.go.dev/github.com/go-lark/lark)
+[![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
 
 An easy-to-use unofficial SDK for Feishu and Lark Open Platform.
 
@@ -19,6 +21,7 @@ It is widely used and tested by in-house ~450 developers with over 1.5k Go packa
 - Easy to create incoming message hook
 - Encryption and token verification supported
 - Middleware support for Gin web framework
+- Highly extensible
 - Documentation & tests
 
 ## Installation

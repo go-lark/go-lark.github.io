@@ -4,6 +4,7 @@ layout: default
 [![build](https://github.com/go-lark/lark/actions/workflows/ci.yml/badge.svg)](https://github.com/go-lark/lark/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/go-lark/lark/branch/main/graph/badge.svg)](https://codecov.io/gh/go-lark/lark)
 [![Go Report Card](https://goreportcard.com/badge/github.com/go-lark/lark)](https://goreportcard.com/report/github.com/go-lark/lark)
+[![Go Module](https://badge.fury.io/go/github.com%2Fgo-lark%2Flark.svg)](https://badge.fury.io/go/github.com%2Fgo-lark%2Flark.svg)
 [![Go Reference](https://pkg.go.dev/badge/github.com/go-lark/lark.svg)](https://pkg.go.dev/github.com/go-lark/lark)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
 
@@ -20,7 +21,7 @@ It is widely used and tested by in-house ~450 developers with over 1.5k Go packa
 - Quick to build message with `MsgBuffer`
 - Easy to create incoming message hook
 - Encryption and token verification supported
-- Middleware support for Gin web framework
+- Middleware support for Gin & Hertz web framework
 - Highly extensible
 - Documentation & tests
 
@@ -68,7 +69,7 @@ import "github.com/go-lark/lark"
 
 func main() {
     bot := lark.NewNotificationBot("<WEB HOOK URL>")
-    bot.PostNotification("title", "text")
+    bot.PostNotificationV2(lark.NewMsgBuffer(lark.MsgText).Text("hello, wolrd").Build())
 }
 ```
 
@@ -78,7 +79,7 @@ func main() {
   because Feishu and Lark basically shares the same API specification.
   We do not guarantee all of the APIs work well with Lark, until we have tested it on Lark.
 - go-lark only supports Custom App. Marketplace App is not supported yet.
-- go-lark implements bot and messaging API, other APIs such as Lark Doc, Calendar and so so are not supported.
+- go-lark implements messaging, group chat, and bot API, other APIs such as Lark Doc, Calendar and so on are not supported.
 
 ### Switch to Lark Endpoints
 
